@@ -12,6 +12,7 @@ body {
     color: #F9FAF8;
     padding: 6px 64px 64px;
     height: 350px;
+    flex: 1;
 }
 
 .first .header {
@@ -19,6 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
+    align-items: center;
 }
 
 .first .header ul {
@@ -43,6 +45,7 @@ a {
 .first .main-container .container-header {
     font-size: 48px;
     font-weight: 900;
+    flex-wrap: wrap;
 }
 
 .first .main-container .main-right {
@@ -51,14 +54,69 @@ a {
     height: 250px;
 }
 
-.third {
-    background-color: F9FAF8;
+.first img {
+    max-width:100%;
+    height: auto;
+}
+
+.first button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 6px 24px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.first .main-container .main-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex: 1;
+}
+
+.second .main-header {
     color: #1F2937;
     font-size: 36px;
+    font-weight: 900;
+}
+
+.second .information-container {
+    display: flex;
+    gap: 36px;
+}
+
+.second .information-container .lesser-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.third {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 24px;
     font-style: italic;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 18px 300px 18px;
+    flex: 1 1 auto;
+    
+}
+
+.third .writer {
+    align-self: flex-end;
 }
 
 .fourth {
@@ -76,16 +134,9 @@ a {
     font-weight: 900;
 }
 
-.first button {
-    background-color: #3882F6;
-    color: #E5E7EB;
-    border-color: #E5E7EB;
-    border-radius: 5px;
-    padding: 6px 24px;
-    font-size: 12px;
-}
-
 .footer {
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 48px;
 }
