@@ -13,12 +13,13 @@ body {
     padding: 6px 64px 64px;
     height: 350px;
     flex: 1;
+    min-height:0;
 }
 
 .first .header {
     color: #F9FAF8;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 32px;
     align-items: center;
 }
@@ -26,7 +27,7 @@ body {
 .first .header ul {
     display: flex;
     list-style-type: none;
-    gap: 16px;
+    gap: 48px;
 }
 
 a {
@@ -45,18 +46,15 @@ a {
 .first .main-container .container-header {
     font-size: 48px;
     font-weight: 900;
-    flex-wrap: wrap;
 }
 
 .first .main-container .main-right {
-    background-color: gray;
-    width: 500px;
-    height: 250px;
+    width: 600px;
+    height: auto;
 }
 
 .first img {
-    max-width:100%;
-    height: auto;
+    max-width:90%;
 }
 
 .first button {
@@ -81,7 +79,8 @@ a {
     justify-content: center;
     align-items: center;
     gap: 18px;
-    flex: 1;
+    flex: auto;
+    margin-bottom: 32px;
 }
 
 .second .main-header {
@@ -92,13 +91,25 @@ a {
 
 .second .information-container {
     display: flex;
-    gap: 36px;
+    gap: 32px;
+    border-color: #3882F6;
+    flex-wrap: wrap;
+    padding: 16px;
+    
 }
 
 .second .information-container .lesser-container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
+    max-width: 200px;
+}
+
+.second img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3882F6;
+    border-radius: 10px;
 }
 
 .third {
@@ -106,31 +117,54 @@ a {
     color: #1F2937;
     font-size: 24px;
     font-style: italic;
-    display: flex;
+    padding: 18px 100px 18px;
+    display :flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 18px 300px 18px;
-    flex: 1 1 auto;
-    
 }
 
-.third .writer {
+.third .blockquote {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.third .blockquote .writer {
     align-self: flex-end;
 }
 
 .fourth {
-    background-color: #3882F6;
     color: #F9FAF8;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 16px 64px;
     gap: 64px;
+    padding: 32px;
+}
+
+.fourth button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 6px 24px;
+    border-color: #F9FAF8;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.fourth .inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    display: flex;
+    gap: 32px;
+    min-width: 100px;
+    padding: 32px 64px;
+    border-radius: 5px;
 }
 
 .fourth .main-text .container-header {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 900;
 }
 
@@ -138,7 +172,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 48px;
+    padding: 24px 48px;
     color: #F9FAF8;
     background-color: #272626;
 }
